@@ -5,8 +5,19 @@ Một thư viện nhỏ dành cho trang web DocLN
 ## Tính năng
 Nhanh, dễ làm quen.
 ## Hướng dẫn sử dụng
-Wiki
+```bash
+python3 -m pip install curl_cffi
+
+git clone https://github.com/VibeCoderClone/DocLN-api.git
+
+mv DocLN-api/moeDocLN.py ../
+
+rm -r DocLN-api
+```
+Kéo file vào dự án. rồi import và dùng.
+
+Đọc wiki để biết thêm thông tin
 ## Ngừng phát triển.
 Dự án này tôi rất tâm huyết, nhưng ehhh. bị BAN rồi. 
 
-Tôi cũng còn công việc ngoài đời nên đâm ra không thêm được, tôi cũng không rảnh tạo acc khác rồi để bị ban.
+Tôi cũng khá chán rồi, cũng không rảnh tạo acc khác rồi để bị ban.
