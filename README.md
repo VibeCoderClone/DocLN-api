@@ -8,11 +8,7 @@ Nhanh, dễ làm quen.
 ```bash
 python3 -m pip install curl_cffi
 
-git clone https://github.com/VibeCoderClone/DocLN-api.git
-
-mv DocLN-api/moeDocLN.py ../
-
-rm -r DocLN-api
+curl -fsSL https://raw.githubusercontent.com/VibeCoderClone/DocLN-api/main/moeDocLN.py -o moeDocLN.py
 ```
 Kéo file vào dự án. rồi import và dùng.
 
