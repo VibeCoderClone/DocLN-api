@@ -5,7 +5,7 @@ Một thư viện nhỏ dành cho trang web DocLN
 ## Tính năng
 Nhanh, dễ làm quen.
 ## Hướng dẫn sử dụng
-WIP
+Wiki
 ## Ngừng phát triển.
 Dự án này tôi rất tâm huyết, nhưng ehhh. bị BAN rồi. 
 
