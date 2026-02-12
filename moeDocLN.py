@@ -1,6 +1,5 @@
 from curl_cffi import requests
 from re import search, findall
-from urllib.parse import urlencode
 from time import time
 # this thing for some reason took the most time lmao
 
@@ -233,3 +232,4 @@ class moeDocLN:
                     return -1
             else:
                 return -1
+
