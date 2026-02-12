@@ -1,5 +1,5 @@
 # moeDocLN
-Một API nhỏ dành cho trang web DocLN
+Một thư viện nhỏ dành cho trang web DocLN
 ## Giới thiệu
 **moeDocLN** là một thư viện python nhỏ dành cho trang web DocLN, được thiết kế để tự động hóa một số thứ.
 ## Tính năng
