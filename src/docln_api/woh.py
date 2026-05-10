@@ -3,82 +3,85 @@ from re import search, findall
 from time import time
 
 # Mapping
-Genres = {
-  "Action": 1,
-  "Adapted to Anime": 49,
-  "Adapted to Drama CD": 51,
-  "Adapted to Manga": 50,
-  "Adapted to Manhua": 64,
-  "Adapted to Manhwa": 65,
-  "Adult": 28,
-  "Adventure": 2,
-  "Age Gap": 52,
-  "Boys Love": 60,
-  "Character Growth": 54,
-  "Chinese Novel": 39,
-  "Comedy": 3,
-  "Cooking": 43,
-  "Different Social Status": 56,
-  "Drama": 4,
-  "Ecchi": 5,
-  "English Novel": 40,
-  "Fanfiction": 62,
-  "Fantasy": 6,
-  "Female Protagonist": 59,
-  "Game": 45,
-  "Gender Bender": 7,
-  "Harem": 8,
-  "Historical": 35,
-  "Horror": 9,
-  "Incest": 10,
-  "Isekai": 30,
-  "Josei": 33,
-  "Korean Novel": 34,
-  "Magic": 44,
-  "Martial Arts": 37,
-  "Mature": 27,
-  "Mecha": 11,
-  "Military": 36,
-  "Misunderstanding": 58,
-  "Mystery": 12,
-  "Netorare": 32,
-  "One shot": 38,
-  "Otome Game": 46,
-  "Parody": 61,
-  "Psychological": 23,
-  "Reverse Harem": 47,
-  "Romance": 22,
-  "Satire": 66,
-  "School Life": 13,
-  "Science Fiction": 14,
-  "Seinen": 31,
-  "Shoujo": 15,
-  "Shoujo ai": 16,
-  "Shounen": 26,
-  "Shounen ai": 17,
-  "Slice of Life": 18,
-  "Slow Life": 55,
-  "Sports": 19,
-  "Super Power": 24,
-  "Supernatural": 20,
-  "Suspense": 25,
-  "Tragedy": 21,
-  "Wars": 53,
-  "Web Novel": 29,
-  "Workplace": 57,
-  "Yandere": 63,
-  "Yuri": 48
+Mapping = {
+    "Genres": {
+        "Action": 1,
+        "Adapted to Anime": 49,
+        "Adapted to Drama CD": 51,
+        "Adapted to Manga": 50,
+        "Adapted to Manhua": 64,
+        "Adapted to Manhwa": 65,
+        "Adult": 28,
+        "Adventure": 2,
+        "Age Gap": 52,
+        "Boys Love": 60,
+        "Character Growth": 54,
+        "Chinese Novel": 39,
+        "Comedy": 3,
+        "Cooking": 43,
+        "Different Social Status": 56,
+        "Drama": 4,
+        "Ecchi": 5,
+        "English Novel": 40,
+        "Fanfiction": 62,
+        "Fantasy": 6,
+        "Female Protagonist": 59,
+        "Game": 45,
+        "Gender Bender": 7,
+        "Harem": 8,
+        "Historical": 35,
+        "Horror": 9,
+        "Incest": 10,
+        "Isekai": 30,
+        "Josei": 33,
+        "Korean Novel": 34,
+        "Magic": 44,
+        "Martial Arts": 37,
+        "Mature": 27,
+        "Mecha": 11,
+        "Military": 36,
+        "Misunderstanding": 58,
+        "Mystery": 12,
+        "Netorare": 32,
+        "One shot": 38,
+        "Otome Game": 46,
+        "Parody": 61,
+        "Psychological": 23,
+        "Reverse Harem": 47,
+        "Romance": 22,
+        "Satire": 66,
+        "School Life": 13,
+        "Science Fiction": 14,
+        "Seinen": 31,
+        "Shoujo": 15,
+        "Shoujo ai": 16,
+        "Shounen": 26,
+        "Shounen ai": 17,
+        "Slice of Life": 18,
+        "Slow Life": 55,
+        "Sports": 19,
+        "Super Power": 24,
+        "Supernatural": 20,
+        "Suspense": 25,
+        "Tragedy": 21,
+        "Wars": 53,
+        "Web Novel": 29,
+        "Workplace": 57,
+        "Yandere": 63,
+        "Yuri": 48
+    },
+    "Status": {
+        "Đang tiến hành": 1,
+        "Tạm ngừng": 2,
+        "Đã hoàn thành": 3
+    },
+    "Type": {
+        "Truyện Dịch": 1,
+        "AI Dịch": 2,
+        "Sáng tác": 3
+    }
 }
-Status = {
-    "Đang tiến hành": 1,
-    "Tạm ngừng": 2,
-    "Đã hoàn thành": 3
-}
-Type = {
-    "Truyện Dịch": 1,
-    "AI Dịch": 2,
-    "Sáng tác": 3
-}
+
 
 isDebug = False
 def log(msg):
@@ -155,8 +158,8 @@ class moeDocLN:
             ]
 
             for genre in genres:
-                if genre in TheLoai:
-                    base.append(("genres[]", TheLoai[genre]))
+                if genre in Mapping["Genres"]:
+                    base.append(("genres[]", Mapping["Genres"][genre]))
 
             base.append(("summary", summary))
             base.append(("extra", extra))
