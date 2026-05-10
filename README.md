@@ -4,12 +4,11 @@ Một thư viện nhỏ dành cho trang web DocLN
 **moeDocLN** là một thư viện python nhỏ dành cho trang web DocLN, được thiết kế để tự động hóa một số thứ.
 ## Tính năng
 Nhanh, dễ làm quen.
-## Hướng dẫn sử dụng
+## Hướng dẫn cài đặt 
+### Bằng tay
 ```bash
-python3 -m pip install curl_cffi
-
-curl -fsSL https://raw.githubusercontent.com/VibeCoderClone/DocLN-api/main/moeDocLN.py -o moeDocLN.py
+python -m pip install DocLN-API 
 ```
-Kéo file vào dự án. rồi import và dùng.
+Rồi import và dùng.
 
 Đọc wiki để biết thêm thông tin
