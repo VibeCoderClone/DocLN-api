@@ -1,7 +1,7 @@
-# moeDocLN
+# moeDocLN (hay DocLN-API)
 Một thư viện nhỏ dành cho trang web DocLN
 ## Giới thiệu
-**moeDocLN** là một thư viện python nhỏ dành cho trang web DocLN, được thiết kế để tự động hóa một số thứ.
+**moeDocLN (hay DocLN-API)** là một thư viện python nhỏ dành cho trang web DocLN, được thiết kế để tự động hóa một số thứ.
 ## Tính năng
 Nhanh, dễ làm quen.
 ## Hướng dẫn cài đặt 
@@ -9,6 +9,11 @@ Nhanh, dễ làm quen.
 ```bash
 python -m pip install DocLN-API 
 ```
-Rồi import và dùng.
+```python
+# Import
+from docln_api import woh
+# Use
+print(woh.Mapping["Genres"]["Fantasy"])
+```
 
 Đọc wiki để biết thêm thông tin
