@@ -13,7 +13,3 @@ curl -fsSL https://raw.githubusercontent.com/VibeCoderClone/DocLN-api/main/moeDo
 Kéo file vào dự án. rồi import và dùng.
 
 Đọc wiki để biết thêm thông tin
-## Ngừng phát triển.
-Dự án này tôi rất tâm huyết, nhưng ehhh. bị BAN rồi. 
-
-Tôi cũng khá chán rồi, cũng không rảnh tạo acc khác rồi để bị ban.
