@@ -1,0 +1,17 @@
+[project]
+name = "DocLN-API"
+version = "1.0.0"
+description = "Library that interact with DocLN.sbs"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "nyae", email = "reoppldsxc@proton.me"}]
+requires-python = ">=3.8"
+dependencies = ["curl-cffi"]
+
+[project.urls]
+Homepage = "https://github.com/VibeCoderClone/DocLN-api"
+Repository = "https://github.com/VibeCoderClone/DocLN-api"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
